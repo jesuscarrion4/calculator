@@ -11,8 +11,6 @@ let operacion = undefined;
 buttonNumeros.forEach(function(button){
     button.addEventListener('click', function(){
         agregarNumero(button.innerText);
-        
-
     })
     
 });
@@ -64,6 +62,7 @@ function calcular(){
     opeActual = calculo;
     operacion = undefined;
     opeAnterior = '';
+    localStorage.setItem( "ultimaOperacion", JSON.stringify(calculo) );
 }
 
 buttonDelete.addEventListener('click', function(){
@@ -85,6 +84,15 @@ function actualizarDisplay(){
 }
 
 clear ();
+
+
+
+//localStorage.setItem( "ultimaOperacion", result );
+
+
+
+
+
 
 
 
