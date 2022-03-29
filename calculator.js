@@ -87,7 +87,7 @@ clear ();
 
 
 
-//localStorage.setItem( "ultimaOperacion", result );
+
 
 
 
